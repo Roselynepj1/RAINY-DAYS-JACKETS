@@ -1,0 +1,230 @@
+body {
+    /*add css to html element*/
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px black;
+}
+
+.nav-top {
+    /*add css to a class*/
+    background-color: #C3CFE1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    height: 30px;
+}
+
+.logo-topNav img {
+    max-width: 110px;
+    margin-left: 90px;
+}
+
+.bottom-nav-logo {
+    height: 50px
+}
+
+/* search-bar 
+wishlist
+login 
+Register  */
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    border-radius: 5px #0000004d;
+    padding: 8px;
+    font-size: 16px;
+    width: 600px;
+    background-color: #f2f2f2;
+}
+
+.search-bar input[placeholder="Search"] {
+    font-size: 20px;
+    font-family: "Helvetica Neue" Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.search-bar button {
+    border-radius: 6px;
+    background-color: #F05454;
+    width: 90px;
+    height: 43px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa-search {
+    color: #000000;
+    font-size: 20px;
+}
+
+.wishlist {
+    display: flex;
+}
+
+.cartTop_Home img {
+    width: 35px;
+    height: 35px;
+}
+
+.fa-heart {
+    color: #F05454;
+    font-size: 35px;
+}
+
+.fa-user {
+    color: #000000;
+    font-size: 35px;
+}
+
+.nav-menu {
+    background-color: #F05454;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-menu li {
+    margin-left: 180px;
+}
+
+.nav-menu a {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Helvetica Neue" Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.nav-menu a:hover {
+    background-color: #666;
+}
+
+.Top_HomeImgz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Top_HomeImgz img {
+    width: 50%;
+    height: 800px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.Top_HomeImgz h1 {
+    position: absolute;
+    /*positioning the h1 absolute to parent container*/
+    /* centered it within parent container */
+    top: 36%;
+    /*vertically*/
+    left: 50%;
+    /*horizontally*/
+    transform: translate(-50%, -50%);
+    /*set h1 to move back to the left by 50% of its own height & width*/
+    z-index: 1;
+    /*set h1 element to appear on Top of the images*/
+
+    /* Styling text */
+    font-size: 32px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Top_HomeImgz .intro_shop_btn {
+    /*adding css to a class inside a parent class*/
+    position: absolute;
+    /*positioning the h1 absolute to parent container*/
+    /* centered it within parent container */
+    top: 58%;
+    /*vertically*/
+    left: 50%;
+    /*horizontally*/
+    transform: translate(-50%);
+    /*set h1 to move back to the left by 50% of its own height & width*/
+    z-index: 1;
+    /*set h1 element to appear on Top of the images*/
+    /*style to the button in context*/
+    background-color: #799198;
+    color: #f2f2f2;
+    padding: 28px 75px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+
+/* IMPLEMENT THE HOME GALLERY STYLE HERE!!! */
+.home_gallery {
+    /*positioning the gallery to be 100% relatively with hidden overflow*/
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home_gallery_images {
+    /*create layout box and set width to fit contents with some transitions*/
+    display: flex;
+    width: fit-content;
+    transition: transform 0.5s ease-in-out;
+}
+
+.home_gallery_images img {
+    /*sytling images*/
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.arrow {
+    /*styling the button arrow class */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.arrow hover {
+    opacity: 0.8;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
